@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>Hi</pattern>
+    
+    <template>
+        <random>
+            <li>Hello</li>
+            <li>Hi, How can I Help You ? </li>
+            <li>Hello, Nice to meet You.</li>
+            </random>
+                </template>
+  </category>
+  
+  <category>
+    <pattern>Hello</pattern>
+    
+    <template><srai>Hi</srai></template>
+  </category>
+  
+  <category>
+    <pattern>*</pattern>
+    
+    <template>
+        <srai>Hi</srai>
+                </template>
+  </category>
+  
+  <category>
+      <pattern>Is it necessary to have an Account to place an Order?</pattern>
+      <template>No, you can Order as a Guest without creating an Account. However, creating an Account has benefits.</template>
+      </category>
+  
+  <category>
+    <pattern>Account</pattern>
+    <template>No, you can Order as a Guest without creating an Account. However, creating an Account has benefits.</template>
+      </category>
+      
+  <category>
+      <pattern>_ Account </pattern>
+      <template>
+          <srai>Account</srai>
+          </template>
+      </category>    
+
+<category>
+      <pattern> Account * </pattern>
+      <template>
+          <srai>Account</srai>
+          </template>
+      </category>
+
+ <category>
+      <pattern>_ Account * </pattern>
+      <template>
+          <srai>Account</srai>
+          </template>
+      </category>    
+      
+      
+<category>
+      <pattern>What are the benefits of creating an Account?</pattern>
+      <template><li>Your billing / shipping information will be saved, and checkout will be faster.</li>
+                <li>You will be able to view your previous Order history.</li>
+                <li>An Account is required to facilitate returns and Order cancelations.</li>
+                <li>Account holders will remain up to date with latest promotions and newsletters.</li>
+          </template>
+ </category>
+      
+
+ <category>
+      <pattern>
+          How do I make an Account?
+      </pattern>
+      <template>
+          Simply click on ‘Create an Account’, enter the required details and submit the form.
+      </template>
+ </category>
+  
+<category>
+      <pattern>
+          I have forgotten my password
+      </pattern>
+      <template>
+        <li>Click on ‘Forgot Password’, enter your email address and click on ‘Reset My Password’</li>
+        <li>Click on the link you receive on your email address and enter your new password.</li> 
+      </template>
+</category>
+
+<category>
+     <pattern>
+          How do I get sale or promotional messages from Khaadi?
+      </pattern>
+      <template>
+        Click here to subscribe to our newsletter to receive updates on sales and promotions.
+      </template>   
+  </category>
+
+
+  <category>
+      <pattern>
+          I have forgotten my password
+      </pattern>
+      <template>
+        Click on ‘Forgot Password’, enter your email address and click on ‘Reset My Password’
+        Click on the link you receive on your email address and enter your new password.
+      </template>
+  </category>
+
+  <category>
+      <pattern>
+          What kind of payment methods do you accept?
+      </pattern>
+      <template>
+        Cash On Delivery (COD)
+        Cards (Visa Debit/Credit, Master Debit/Credit)
+      </template>
+  </category>
+
+ <category>
+      <pattern>
+            What if a damaged item is delivered to me?
+      </pattern>
+      <template>
+        Although we take extra precautions to ensure that each order is in mint condition, should an unfortunate mishap occur, you can get in touch with our Customer Support to return the item or exchange it for the correct order.
+      </template>
+  </category>
+  
+  <category>
+      <pattern>
+            What if an incorrect item is delivered to me?
+      </pattern>
+      <template><srai> if a damaged item is delivered to me?</srai></template>
+  </category>
+
+ <category>
+      <pattern>
+            Are there any shipping costs?
+      </pattern>
+      <template>
+        Yes, shipping charges apply on orders below PKR 2000. We offer free shipping on orders above PKR 2000 to all our customers within Pakistan.
+      </template>
+  </category>
+  
+</aiml>
